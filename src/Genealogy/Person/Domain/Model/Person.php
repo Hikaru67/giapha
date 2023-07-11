@@ -4,7 +4,7 @@ namespace Src\Genealogy\Person\Domain\Model;
 
 use Src\Common\Domain\AggregateRoot;
 
-class Person extends AggregateRoot implements \JsonSerializable
+class Person extends AggregateRoot
 {
     public function __construct(
         // TODO Add properties
@@ -16,10 +16,5 @@ class Person extends AggregateRoot implements \JsonSerializable
         return [
             // TODO Add properties
         ];
-    }
-
-    public function jsonSerialize(): array
-    {
-        return $this->toArray();
     }
 }

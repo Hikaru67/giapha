@@ -4,7 +4,7 @@ namespace Src\**BoundedContext**\**Domain**\Domain\Model;
 
 use Src\Common\Domain\AggregateRoot;
 
-class **Domain** extends AggregateRoot implements \JsonSerializable
+class **Domain** extends AggregateRoot
 {
     public function __construct(
         // TODO Add properties
@@ -16,10 +16,5 @@ class **Domain** extends AggregateRoot implements \JsonSerializable
         return [
             // TODO Add properties
         ];
-    }
-
-    public function jsonSerialize(): array
-    {
-        return $this->toArray();
     }
 }
